@@ -22,7 +22,7 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
-    "hexo-theme-aurora": "file:./themes/hexo-theme-aurora"
+    "hexo-theme-aurora": "^1.5.5"
   },
   "devDependencies": {
     "hexo-util": "^2.5.0"
