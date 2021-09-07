@@ -1,3 +1,4 @@
 # ourhome_hexo
 me and my wife's personal websie.
-powered by hexo, theme copyed from hexo-theme-aurora
+just record our life.
+powered by hexo, theme customized from bennyxguo's aurora hexo theme.
