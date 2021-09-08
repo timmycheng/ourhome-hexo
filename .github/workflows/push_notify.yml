@@ -22,8 +22,10 @@ jobs:
       - name: Get uid
         env:
           uid: ${{ secrets.UID }}
-          
-        run: echo $uid
+          token: ${{ secrets.wxpusher_token}}
+          url: 'http://wxpusher.zjiecode.com/api/send/message'
+          content-type: 'Content-Type: application/json'
+        run: curl -d '{"appToken":$token, "content":"This is from github actions notify!", "uids":[$uid], "contentType":1}' -H $content-type -X POST $url
 
       # # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v2
