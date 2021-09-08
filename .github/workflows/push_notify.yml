@@ -20,7 +20,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Get uid
-        run: echo ${{ secrets.uid }}
+        env:
+          uid: ${{ secrets.uid }}
+        run: echo $uid
+
       # # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v2
 
