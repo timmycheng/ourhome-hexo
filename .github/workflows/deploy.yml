@@ -1,0 +1,29 @@
+name: hexo_deploy
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - ".github/**"
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: CheckOut
+        uses: actions/checkout@v2
+      
+      - name: Set-up Node Env
+        uses: actions/setup-node@v1
+        with:
+          node-version: v12
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy hexo
+        run: npm run deploy
+      
+      
+
+  

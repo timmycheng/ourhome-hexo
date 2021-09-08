@@ -21,6 +21,6 @@ jobs:
         uses: lxzxl/wxpusher-action@v1
         with:
           appToken: ${{ secrets.wxpusher_token}}
-          summary: "页面部署成功！"
-          content: "页面部署成功！"
+          summary: "Page Deploy Success!"
+          content: ""
           uids: ${{ secrets.uid }}
