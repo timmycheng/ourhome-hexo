@@ -108,5 +108,6 @@ theme: aurora
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/timmycheng/timmycheng.github.io
+  # repo: https://github.com/timmycheng/timmycheng.github.io
+  repo: git@github.com:timmycheng/timmycheng.github.io.git
   branch: pages
