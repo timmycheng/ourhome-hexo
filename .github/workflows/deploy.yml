@@ -34,7 +34,7 @@ jobs:
           npm install
 
       - name: Deploy hexo
-        run: hexo g && hexo d
+        run: hexo g -d
       
       
 
