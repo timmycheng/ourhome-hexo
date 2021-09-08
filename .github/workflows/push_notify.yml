@@ -21,7 +21,8 @@ jobs:
     steps:
       - name: Get uid
         env:
-          uid: ${{ secrets.uid }}
+          uid: ${{ secrets.UID }}
+          
         run: echo $uid
 
       # # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
