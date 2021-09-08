@@ -5,6 +5,7 @@ on:
       - master
     paths-ignore:
       - ".github/**"
+  workflow_dispatch:
 jobs:
   build:
     name: build
