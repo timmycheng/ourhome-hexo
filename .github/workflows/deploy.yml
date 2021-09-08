@@ -50,7 +50,7 @@ jobs:
             "uids":[
                 "${{ secrets.uid }}"
             ],
-            "url":"https://www.timmycheng.cn"
+            "url":"https://timmycheng.cn"
           }' \
       
       
