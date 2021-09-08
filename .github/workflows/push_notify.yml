@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: wxpusher
-        uses: lxzxl/wxpusher-action@v1.0
+        uses: lxzxl/wxpusher-action@v1
         with:
           appToken: ${{ secrets.wxpusher_token}}
           content: "This is from github action"
