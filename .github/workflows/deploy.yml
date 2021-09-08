@@ -7,8 +7,8 @@ on:
       - ".github/**"
   workflow_dispatch:
 jobs:
-  build:
-    name: build
+  deploy:
+    name: deploy
     runs-on: ubuntu-latest
     steps:
       - name: CheckOut
@@ -36,6 +36,22 @@ jobs:
 
       - name: Deploy hexo
         run: hexo g -d
+
+      - name: notify
+        run: |
+          curl --request POST \
+          --url http://wxpusher.zjiecode.com/api/send/message \
+          --header 'Content-Type: application/json' \
+          --data '{
+            "appToken":"${{ secrets.wxpusher_token }}",
+            "content":"Github Actions 部署完成!",
+            "summary":"本次提交最新内容：${{ github.event.commits[0].message }}",
+            "contentType":1,
+            "uids":[
+                "${{ secrets.uid }}"
+            ],
+            "url":"https://www.timmycheng.cn"
+          }' \
       
       
 
