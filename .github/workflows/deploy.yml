@@ -11,6 +11,12 @@ jobs:
     name: deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Get Commits Message
+        env:
+          commits_message: ${{ toJSON(github.event.commits.*.message) }}
+        run: |
+          echo "$commits_message"
+
       - name: CheckOut
         uses: actions/checkout@v2
       
@@ -45,7 +51,7 @@ jobs:
           --data '{
             "appToken":"${{ secrets.wxpusher_token }}",
             "content":"Github Actions 部署完成!",
-            "summary":"本次提交内容：${{ github.event.commits[0].message }}",
+            "summary":"本次提交内容：${{ toJSON(github.event.commits.*.message) }}",
             "contentType":1,
             "uids":[
                 "${{ secrets.uid }}"
