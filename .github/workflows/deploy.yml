@@ -39,7 +39,6 @@ jobs:
 
       - name: notify
         run: |
-          echo toJSON(0)
           curl --request POST \
           --url http://wxpusher.zjiecode.com/api/send/message \
           --header 'Content-Type: application/json' \
