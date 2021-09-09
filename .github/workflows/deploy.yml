@@ -39,13 +39,14 @@ jobs:
 
       - name: notify
         run: |
+          echo toJSON(0)
           curl --request POST \
           --url http://wxpusher.zjiecode.com/api/send/message \
           --header 'Content-Type: application/json' \
           --data '{
             "appToken":"${{ secrets.wxpusher_token }}",
             "content":"Github Actions 部署完成!",
-            "summary":"本次提交最新内容：${{ github.event.commits[0].message }}",
+            "summary":"本次提交内容：${{ github.event.commits[0].message }}",
             "contentType":1,
             "uids":[
                 "${{ secrets.uid }}"

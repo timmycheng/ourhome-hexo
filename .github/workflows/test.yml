@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: deploy_notify
+name: test
 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -17,10 +17,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: wxpusher
-        uses: lxzxl/wxpusher-action@v1
-        with:
-          appToken: ${{ secrets.wxpusher_token}}
-          summary: "Page Deploy Success!"
-          content: ""
-          uids: ${{ secrets.uid }}
+      - name: show github content
+        run: |
+          echo ${{ toJSON(github) }}
