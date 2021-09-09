@@ -44,14 +44,16 @@ jobs:
         run: hexo g -d
 
       - name: notify
+        # env:
+          # messages: ${{ github.event.commits.*.message }}
         run: |
           curl --request POST \
           --url http://wxpusher.zjiecode.com/api/send/message \
           --header 'Content-Type: application/json' \
           --data '{
             "appToken":"${{ secrets.wxpusher_token }}",
-            "content":"Github Actions 部署完成!",
-            "summary":"本次提交内容：${{ toJSON(github.event.commits.*.message) }}",
+            "summary":"Github Actions 部署完成!",
+            "content":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}",
             "contentType":1,
             "uids":[
                 "${{ secrets.uid }}"
