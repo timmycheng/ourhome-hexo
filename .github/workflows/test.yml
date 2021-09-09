@@ -21,4 +21,4 @@ jobs:
 
     steps:
       - name: show github content
-        run: echo ${{ toJSON(github.commits.*.message) }}
+        run: echo ${{ toJSON(github.commits) }}
