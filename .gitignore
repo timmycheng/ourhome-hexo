@@ -6,3 +6,5 @@ node_modules/
 public/
 .deploy*/
 github-deploy*
+source/_posts/yuque*
+yuque.json
