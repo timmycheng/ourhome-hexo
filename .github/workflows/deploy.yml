@@ -2,8 +2,7 @@ name: hexo_deploy
 on:
   push:
     branches:
-      - master
-      - repository_dispatch
+      - [ master, repository_dispatch ]
     paths-ignore:
       - ".github/**"
   workflow_dispatch:
