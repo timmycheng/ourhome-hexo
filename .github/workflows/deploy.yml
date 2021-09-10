@@ -38,10 +38,13 @@ jobs:
       - name: Install dependencies
         run: |
           npm install hexo -g
+          npm install yuque-hexo -g
           npm install
 
       - name: Deploy hexo
-        run: hexo g -d
+        env:
+          yuque_token: ${{ secrets.yuque_token }}
+        run: yuque_token=$yuque_token yuque-hexo sync && hexo g -d
 
       - name: notify
         # env:
