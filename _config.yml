@@ -17,7 +17,7 @@ timezone: ''
 url: https://timmycheng.github.io
 # root: '/ourhome-hexo/'
 # permalink: :year/:month/:day/:title/
-permalink: /post/:title.html
+permalink: /post/:name.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
