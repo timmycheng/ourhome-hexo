@@ -54,21 +54,28 @@ menu:
 #! ---------------------------------------------------------------
 theme:
   dark_mode: true
-  profile_shape: diamond # support `circle`, `diamond`, `rounded`
-  feature: true
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  feature: false
   gradient:
+    # default
     # color_1: '#24c6dc'
     # color_2: '#5433ff'
     # color_3: '#ff0099'
+    # xingu's pick
     color_1: '#f34dc3'
     color_2: '#041746'
     color_3: '#040b29'
+    # all black
+    # color_1: '#000000'
+    # color_2: '#000000'
+    # color_3: '#ffffff'
 
 #! ---------------------------------------------------------------
 #! Social Configs
 #! @docs https://aurora.tridiamond.tech/guide/social.html
 #! ---------------------------------------------------------------
 socials:
+  github: 'https://github.com/timmycheng'
   customs:
   ##! Example:
   ##! --- Using SVG
@@ -129,8 +136,8 @@ valine:
   lang: en
   avatarForce: false
   meta: ['nick', 'mail']
-  requiredFields: []
-  admin: 'TriDiamond'
+  requiredFields: ['nick']
+  admin: 'Timmycheng'
   recentComment: true
 
 # Enable Busuanzi statistic plugin
