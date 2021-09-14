@@ -127,10 +127,10 @@ gitalk:
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
 valine:
-  enable: false
-  app_id:
-  app_key:
-  avatar: ''
+  enable: true
+  app_id: uoLckycaMTi4V6a4pRFeeQQT-gzGzoHsz
+  app_key: SruXhqKhs9SF4Vsm8qHrxa2m
+  avatar: 'md'
   placeholder: Leave your thoughts behind~
   visitor: true
   lang: en
