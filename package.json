@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync": "yuque-hexo sync",
+    "debug": "hexo cl && hexo g && hexo s -s",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
