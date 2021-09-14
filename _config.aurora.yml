@@ -38,6 +38,21 @@ authors:
   #   description: 'Think like an artist, code like an artisan.'
   #   socials:
   #     github: https://tridiamond.tech
+  Tim:
+    name: Tim
+    avatar: https://img-blog.csdnimg.cn/20210313122054101.png
+    link: https://timmycheng.cn/about
+    description: "here is Tim's description."
+    socials:
+      github: https://github.com/timmycheng
+  Xingu:
+    name: Xingu
+    avatar: https://img-blog.csdnimg.cn/20210313122054101.png
+    link: https://timmycheng.cn/about
+    description: "here is Xingu's description."
+    socials:
+      github: https://github.com/timmycheng
+
 
 #! ---------------------------------------------------------------
 #! Menu Configs
