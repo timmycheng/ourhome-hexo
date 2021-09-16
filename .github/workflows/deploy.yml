@@ -14,12 +14,6 @@ jobs:
     name: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Get Commits Message
-        env:
-          commits_message: ${{ toJSON(github.event.commits.*.message) }}
-        run: |
-          echo "$commits_message"
-
       - name: CheckOut
         uses: actions/checkout@v2
       
@@ -41,13 +35,10 @@ jobs:
       - name: Install dependencies
         run: |
           npm install hexo -g
-          npm install yuque-hexo -g
           npm install
 
       - name: Deploy hexo
-        # env:
-        #   yuque_token: ${{ secrets.yuque_token }}
-        run: YUQUE_TOKEN=${{ secrets.YUQUE_TOKEN }} yuque-hexo sync && hexo g -d
+        run: hexo g -d
 
       - name: notify
         # env:
