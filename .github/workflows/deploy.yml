@@ -6,9 +6,6 @@ on:
     paths-ignore:
       - ".github/**"
   workflow_dispatch:
-  repository_dispatch:
-    types:
-      - start
 jobs:
   deploy:
     name: deploy
