@@ -146,12 +146,12 @@ article:
   update_time: true
   # Article licensing block
   licenses:
-    # Creative Commons:
-    #     icon: fab fa-creative-commons
-    #     url: https://creativecommons.org/
-    # Attribution:
-    #     icon: fab fa-creative-commons-by
-    #     url: https://creativecommons.org/licenses/by/4.0/
+    Creative Commons:
+        icon: fab fa-creative-commons
+        url: https://creativecommons.org/
+    Attribution:
+        icon: fab fa-creative-commons-by
+        url: https://creativecommons.org/licenses/by/4.0/
     Noncommercial:
       icon: fab fa-creative-commons-nc
       url: https://creativecommons.org/licenses/by-nc/4.0/
@@ -337,7 +337,7 @@ plugins:
   back_to_top: true
   # Baidu Analytics plugin settings
   # https://tongji.baidu.com
-  baidu_analytics:
+  baidu_analytics: 
     # Baidu Analytics tracking ID
     tracking_id:
   # Bing Webmaster Tools plugin settings
@@ -350,7 +350,7 @@ plugins:
   busuanzi: false
   # CNZZ statistics
   # https://www.umeng.com/web
-  cnzz:
+  cnzz: 
     # CNZZ tracker id
     id:
     # CNZZ website id
@@ -377,7 +377,7 @@ plugins:
     tracking_id:
   # Hotjar user feedback plugin
   # https://www.hotjar.com/
-  hotjar:
+  hotjar: 
     # Hotjar site id
     site_id:
   # Enable the KaTeX math typesetting support
