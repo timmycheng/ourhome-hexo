@@ -17,7 +17,7 @@ jobs:
       - name: Set-up Node Env
         uses: actions/setup-node@v3
         with:
-          node-version: v12
+          node-version: v16
 
       - name: Set-up Enviroment Config
         run: |
