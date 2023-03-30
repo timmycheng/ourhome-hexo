@@ -2,5 +2,5 @@ theme: icarus
 language: zh-CN
 deploy:
   type: git
-  repo: git@github.com:timmycheng/timmycheng.github.io.git
+  repo: http://github.com/timmycheng/timmycheng.github.io
   branch: pages

@@ -23,23 +23,18 @@ jobs:
         with:
           node-version: v16
 
-      # - name: Set-up Enviroment Config
-      #   run: |
-      #     mkdir -p ~/.ssh/
-      #     echo "${{ secrets.DEPLOY_KEY_PRI }}" > ~/.ssh/id_rsa
-      #     chmod 600 ~/.ssh/id_rsa
-      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
-      #     git config --global user.name "timmycheng"
-      #     git config --global user.email "timmycheng@foxmail.com"
-      #     git config --global init.defaultBranch master
-
       - name: Install dependencies
-        run: |
-          npm install hexo -g
-          npm install
+        run: npm install
+        
+      - name: Build
+        run: npm run build
 
-      - name: Deploy hexo
-        run: hexo g -d
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: pages
 
       - name: notify
         # env:
