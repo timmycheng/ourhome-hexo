@@ -1,5 +1,8 @@
+title: Sxxt in mind
+author: Timmycheng
 theme: icarus
 language: zh-CN
+timezone: Asia/Shanghai
 deploy:
   type: git
   repo: http://github.com/timmycheng/timmycheng.github.io
