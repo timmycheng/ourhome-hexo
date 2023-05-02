@@ -183,7 +183,7 @@ donates:
   # Alipay donate button configurations
   - type: alipay
     # Alipay qrcode image URL
-    qrcode: ""
+    qrcode: "/img/alipay.jpg"
   # "Buy me a coffee" donate button configurations
   # -
   #     type: buymeacoffee
@@ -204,7 +204,7 @@ donates:
   # # Wechat donate button configurations
   - type: wechat
     # Wechat qrcode image URL
-    qrcode: ""
+    qrcode: "/img/wechat.jpg"
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 #share:
