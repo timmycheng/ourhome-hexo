@@ -45,7 +45,7 @@ jobs:
           --header 'Content-Type: application/json' \
           --data '{
             "appToken":"${{ secrets.wxpusher_token }}",
-            "summary":"${{ join(github.event.commits.*.message, ', ') push完成! }}",
+            "summary":"${{ join(github.event.commits.*.message, ', ') }} push完成!",
             "content":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}",
             "contentType":1,
             "uids":[
