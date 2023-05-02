@@ -170,6 +170,8 @@ comment:
   type: waline
   server_url: https://app-production-9260.up.railway.app
   lang: zh-CN
+  meta: ['nick','mail']
+  login: disable
   # Disqus shortname
   # shortname: ""
 # Donate plugin configurations
