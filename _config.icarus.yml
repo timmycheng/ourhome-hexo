@@ -164,9 +164,12 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-  type: changyan
-  app_id: cywEHzir8
-  conf: prod_65d3746ff0590aecf5b074c20cc32c14
+  # type: changyan
+  # app_id: cywEHzir8
+  # conf: prod_65d3746ff0590aecf5b074c20cc32c14
+  type: waline
+  server_url: https://app-production-9260.up.railway.app
+  lang: zh-CN
   # Disqus shortname
   # shortname: ""
 # Donate plugin configurations
