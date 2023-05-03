@@ -415,7 +415,7 @@ plugins:
 providers:
   # Name or URL template of the JavaScript and/or stylesheet CDN provider
   # cdn: jsdelivr
-  cdn: '[staticfile]https://cdn.staticfile.org/${package}/${version}/${filename}'
+  cdn: 'https://cdn.staticfile.org/${package}/${version}/${filename}'
   # Name or URL template of the webfont CDN provider
   fontcdn: ustc
   # Name or URL of the fontawesome icon font CDN provider
