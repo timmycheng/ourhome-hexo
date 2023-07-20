@@ -1,4 +1,4 @@
-name: hexo_deploy
+name: deploy
 on:
   push:
     branches:
@@ -10,8 +10,6 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: CheckOut
         uses: actions/checkout@v3
@@ -35,24 +33,24 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: pages
-
-      - name: notify
-        # env:
-          # messages: ${{ github.event.commits.*.message }}
-        run: |
-          curl --request POST \
-          --url http://wxpusher.zjiecode.com/api/send/message \
-          --header 'Content-Type: application/json' \
-          --data '{
-            "appToken":"${{ secrets.wxpusher_token }}",
-            "summary":"${{ join(github.event.commits.*.message, ', ') push完成!",
-            "content":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}",
-            "contentType":1,
-            "uids":[
-                "${{ secrets.uid }}"
-            ],
-            "url":"https://timmycheng.cn"
-          }' \
+      # deprecated
+      # - name: notify
+      #   # env:
+      #     # messages: ${{ github.event.commits.*.message }}
+      #   run: |
+      #     curl --request POST \
+      #     --url http://wxpusher.zjiecode.com/api/send/message \
+      #     --header 'Content-Type: application/json' \
+      #     --data '{
+      #       "appToken":"${{ secrets.wxpusher_token }}",
+      #       "summary":"${{ join(github.event.commits.*.message, ', ') push完成!",
+      #       "content":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}",
+      #       "contentType":1,
+      #       "uids":[
+      #           "${{ secrets.uid }}"
+      #       ],
+      #       "url":"https://timmycheng.cn"
+      #     }' \
       
       
 
