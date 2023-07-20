@@ -1,9 +1,15 @@
-# My Personal Website
-This is my personal websie.
-just record shit in my mind.
-powered by hexo and icarus theme.
-using obsidian to write md, action to deploy.
-but things(or shit) still remain barely.
-delay to lunch for a long long time.
-from a boy to a dad.
-hope it's done in 2023.
+# My Personal Website 
+## Shit in mind
+This is my personal websie code repos.
+
+Just want to record shit in my mind.
+
+Powered by **Hexo** and **Icarus** theme.
+
+Using ~~obsidian~~ **VSCode** to write markdown, **GithubAction** to deploy.
+
+Process delays for a long long time.
+
+From a boy to a dad.
+
+Hoping it's done in 2023.
