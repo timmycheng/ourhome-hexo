@@ -117,7 +117,7 @@ navbar:
 # Page footer configurations
 footer:
   # Copyright text
-  copyright: © 2023
+  copyright: Feel free to comment if I violate any of your rights.
   # Links to be shown on the right of the footer section
   links:
     # Creative Commons:
@@ -164,9 +164,16 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-  type: disqus
+  # type: changyan
+  # app_id: cywEHzir8
+  # conf: prod_65d3746ff0590aecf5b074c20cc32c14
+  type: waline
+  server_url: https://app-production-9260.up.railway.app
+  lang: zh-CN
+  meta: ['nick','mail']
+  login: disable
   # Disqus shortname
-  shortname: ""
+  # shortname: ""
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -178,7 +185,7 @@ donates:
   # Alipay donate button configurations
   - type: alipay
     # Alipay qrcode image URL
-    qrcode: ""
+    qrcode: "/img/alipay.jpg"
   # "Buy me a coffee" donate button configurations
   # -
   #     type: buymeacoffee
@@ -199,13 +206,13 @@ donates:
   # # Wechat donate button configurations
   - type: wechat
     # Wechat qrcode image URL
-    qrcode: ""
+    qrcode: "/img/wechat.jpg"
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-  type: sharethis
+#share:
+  #type: addtoany
   # URL to the ShareThis share plugin script
-  install_url: ""
+  # install_url: ""
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -347,7 +354,7 @@ plugins:
     tracking_id:
   # BuSuanZi site/page view counter
   # https://busuanzi.ibruce.info
-  busuanzi: false
+  busuanzi: true
   # CNZZ statistics
   # https://www.umeng.com/web
   cnzz: 
@@ -407,7 +414,8 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
   # Name or URL template of the JavaScript and/or stylesheet CDN provider
-  cdn: jsdelivr
+  # cdn: jsdelivr
+  cdn: '[cdnjs]https://cdn.staticfile.org/${package}/${version}/${filename}'
   # Name or URL template of the webfont CDN provider
   fontcdn: ustc
   # Name or URL of the fontawesome icon font CDN provider

@@ -33,6 +33,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: pages
+<<<<<<< HEAD
       # deprecated
       # - name: notify
       #   # env:
@@ -51,6 +52,26 @@ jobs:
       #       ],
       #       "url":"https://timmycheng.cn"
       #     }' \
+=======
+
+      - name: notify
+        # env:
+          # messages: ${{ github.event.commits.*.message }}
+        run: |
+          curl --request POST \
+          --url http://wxpusher.zjiecode.com/api/send/message \
+          --header 'Content-Type: application/json' \
+          --data '{
+            "appToken":"${{ secrets.wxpusher_token }}",
+            "summary":"${{ join(github.event.commits.*.message, ', ') }} push完成!",
+            "content":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}",
+            "contentType":1,
+            "uids":[
+                "${{ secrets.uid }}"
+            ],
+            "url":"https://timmycheng.cn"
+          }' \
+>>>>>>> b6f8a466b6e0d82a3160d4fda83db284f36bf1c5
       
       
 

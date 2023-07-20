@@ -1,15 +1,9 @@
-# ourhome_hexo
-me and my wife's personal websie.
-just record our life.
-powered by hexo, theme customized from bennyxguo's aurora hexo theme.
-just do it.
-stil can't make it
-stil can't make it
-make it! now the whole page will be deployed by Github Actions!
-and now we will try notification!
-change something.
-do it again.
-again.
-again.
-again.
-again.
+# My Personal Website
+This is my personal websie.
+just record shit in my mind.
+powered by hexo and icarus theme.
+using obsidian to write md, action to deploy.
+but things(or shit) still remain barely.
+delay to lunch for a long long time.
+from a boy to a dad.
+hope it's done in 2023.

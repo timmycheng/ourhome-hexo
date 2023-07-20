@@ -1,5 +1,10 @@
+title: Sxxt in mind
+subtitle: Record life, along with Sxxt
+author: Timmycheng
 theme: icarus
 language: zh-CN
+timezone: Asia/Shanghai
+url: https://timmycheng.cn
 deploy:
   type: git
   repo: http://github.com/timmycheng/timmycheng.github.io
