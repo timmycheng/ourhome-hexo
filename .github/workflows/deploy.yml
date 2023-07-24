@@ -56,22 +56,9 @@ jobs:
         with:
           uuid: ${{ secrets.FEISHU_WEBHOOK_UUID }}
           secret: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-          json: |
-          {
-            "msg_type":"post",
-            "content":{
-              "post":{
-                "zh_cn":{
-                  "title":"${{join(github.event.commits.*.message,',')}} push 完成！",
-                  "content":[[{
-                    "tag":"text",
-                    "text":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}"
-                  }]]
-                }
-              }
-            }
-          }
-
+          # json: |
+          # {"msg_type":"post","content":{"post":{"zh_cn":{"title":"${{join(github.event.commits.*.message,',')}} push 完成！","content":[[{"tag":"text","text":"本次提交内容：${{ join(github.event.commits.*.message, ', ') }}"}]]}}}}
+          text: push done.
       
       
 
