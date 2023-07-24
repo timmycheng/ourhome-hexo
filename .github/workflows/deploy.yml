@@ -52,7 +52,7 @@ jobs:
       #       "url":"https://timmycheng.cn"
       #     }' \
       - name: Notify
-        uses: Rollingegg/feishu-robot-action
+        uses: Rollingegg/feishu-robot-action@v1
         with:
           uuid: ${{ secrets.FEISHU_WEBHOOK_UUID }}
           secret: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
