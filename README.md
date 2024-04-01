@@ -1,8 +1,10 @@
-# My Personal Website 
-## Shit in mind
+# My Personal Website
+
+## Shiit/Smart in mind
+
 This is my personal websie code repos.
 
-Just want to record shit in my mind.
+Just want to record shiit/smart in my mind.
 
 Powered by **Hexo** and **Icarus** theme.
 
@@ -12,4 +14,4 @@ Process delays for a long long time.
 
 From a boy to a dad.
 
-Hoping it's done in 2023.
+Hoping it's done in ~~2023~~2024.
